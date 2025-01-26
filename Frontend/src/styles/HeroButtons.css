@@ -1,0 +1,65 @@
+/* Common Button Styling */
+.hero-button {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Explore Data Button */
+.hero-button-primary {
+  background: linear-gradient(45deg, #ffdd00, #ff8500);
+  box-shadow: 0 5px 15px rgba(255, 165, 0, 0.4);
+}
+
+.hero-button-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 165, 0, 0.6);
+}
+
+/* Predict Medals Button */
+.hero-button-secondary {
+  background: transparent;
+  color: #ffcc00;
+  border: 2px solid #ffcc00;
+  box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+}
+
+.hero-button-secondary:hover {
+  background: #ffcc00;
+  color: #00274d;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 204, 0, 0.6);
+}
+
+/* Add Subtle Animations on Button Hover */
+.hero-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 300%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-30deg);
+  transition: left 0.5s;
+}
+
+.hero-button:hover::before {
+  left: 100%;
+}
+
+/* Add Glow Effect */
+.hero-button:active {
+  box-shadow: 0 0 20px rgba(255, 204, 0, 0.7);
+  transform: scale(0.98);
+}

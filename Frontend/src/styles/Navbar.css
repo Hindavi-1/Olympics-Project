@@ -1,0 +1,151 @@
+/* General Navigation Bar Styling */
+.navigation-bar {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #005f99, #00b4d8);
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* border-radius: 10px; */
+}
+
+/* Logo Container Styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-image {
+  width: 50px; /* Increased size for better visibility */
+  height: 50px;
+  margin-right: 10px;
+  object-fit: contain; /* Ensures proper scaling */
+  border-radius: 50%; /* Optional: Circular logo look */
+  background-color: rgb(
+    255,
+    255,
+    255
+  ); /* Subtle white background for better contrast */
+  padding: 5px; /* Adds spacing around the logo */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Shadow to make it stand out */
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+  font-size: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #ffdd00;
+  transform: scale(1.1);
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffdd00;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-item.active {
+  border-bottom: 2px solid linear-gradient(90deg, #ffd700, #ffaa00);
+  color: #ffaa00;
+}
+
+/* Search Bar Styling */
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  outline: none;
+  width: 200px;
+  transition: border-color 0.3s ease, width 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #ffdd00;
+  width: 250px;
+}
+
+.search-button {
+  background: #ffdd00;
+  border: none;
+  color: #005f99;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.search-button:hover {
+  background: #ffaa00;
+  transform: scale(1.1);
+}
+
+/* Chat Button Styling */
+.chat-link {
+  background: linear-gradient(90deg, #ffd700, #ffaa00);
+  color: #005f99;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.chat-link:hover {
+  background: linear-gradient(90deg, #005f99, #0077b6);
+  color: #ffdd00;
+  transform: scale(1.1);
+}
+
+/*  */
+
+/* 126 */
+
+/* .search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+} */

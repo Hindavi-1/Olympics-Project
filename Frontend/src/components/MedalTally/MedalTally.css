@@ -1,0 +1,165 @@
+/* Hindavi */
+.medal-tally {
+  margin: 2rem 0;
+  text-align: center;
+  color: #ffffff; /* Text color for better readability */
+}
+
+.medal-tally h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #ffcc00; /* Gold */
+  font-family: "Poppins", sans-serif;
+  text-shadow: 0px 0px 20px rgba(255, 204, 0, 0.9),
+    0px 0px 30px rgba(255, 204, 0, 0.5);
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.medal-tally h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
+  position: relative;
+  background: linear-gradient(90deg, #ffcc00, #0073e6); /* Gold to Blue */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none; /* Remove shadow for gradients */
+}
+
+/* .medal-tally h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background-color: #ffcc00;
+  margin: 0.5rem auto 0;
+  border-radius: 10px;
+} */
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle borders */
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+th {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* color: #ffcc00; Gold color for headers */
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  position: relative;
+}
+
+th::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 3px;
+  background-color: #ffcc00;
+  border-radius: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1); /* Alternating row colors */
+}
+
+tr:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.1)
+  );
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+}
+
+td {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+td img.flag {
+  width: 35px;
+  height: auto;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+td:first-child {
+  font-weight: 700;
+  color: #ffcc00;
+}
+
+tfoot td {
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #ffcc00;
+  border-top: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  table {
+    width: 100%; /* Responsive table for smaller screens */
+  }
+
+  th,
+  td {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .medal-tally h2 {
+    font-size: 2.2rem;
+  }
+}
+
+/* teppppppppppppp */
+.toggle-button {
+  margin: 1rem auto;
+  padding: 0.8rem 1.5rem;
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #e6b800;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-button:focus {
+  outline: none;
+}
