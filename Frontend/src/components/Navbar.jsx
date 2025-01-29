@@ -16,7 +16,10 @@ const NavigationBar = () => {
       <ul className="nav-links">
         <li className="nav-item">Home</li>
         <li className="nav-item">News</li>
-        <li className="nav-item">Medal Prediction</li>
+        <li className="nav-item">
+          Medal Prediction
+          <Link to="/medal-predictions">Medal Prediction</Link>
+        </li>
         <li className="nav-item">Data Visualization</li>
       </ul>
       <div className="search-container">
